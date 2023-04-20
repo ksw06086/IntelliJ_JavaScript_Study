@@ -16,16 +16,3 @@ let user2 = new User('Jane', 20);
 let user3 = new User('Tom', 17);
 user1.sayName();
 
-// **** Computed property ****
-// ex1)
-let a = 'age';
-const user = {
-    name : 'Mike',
-    [a] : 30, // [a]로 바꾸면 a 값이 저기에 들어가게 됨
-}
-// ex2) {5: 5, 안녕하세요: "Hello"}
-// const user = {
-//   [1+4] : 5,
-//   ["안녕" + "하세요"] : "Hello"
-// }
-
