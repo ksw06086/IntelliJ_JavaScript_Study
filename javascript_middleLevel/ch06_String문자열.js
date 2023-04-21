@@ -42,3 +42,27 @@ desc.substring(2, 5) // "cde"
 // 10. str.repeat(n) : 문자열을 n번 반복함
 let hello = "hello"
 hello.repeat(3) // hellohellohello
+
+
+// ex) 금칙어 : 콜라
+// - indexOf() 활용
+function hasCola(str) {
+    if(str.indexOf("콜라") > -1){
+        console.log("금칙어가 있습니다.")
+    } else {
+        console.log("통과")
+    }
+}
+hasCola("사이다 맛있다.")
+hasCola("콜라 맛있다.")
+hasCola("맛있는 콜라.")
+
+// includes 활용 : 포함되면 true를 반환
+function hasCola2(str) {
+    if(str.includes("콜라")){
+        console.log("금칙어가 있습니다.")
+    } else {
+        console.log("통과")
+    }
+}
+hasCola2("맛있는 콜라.")
